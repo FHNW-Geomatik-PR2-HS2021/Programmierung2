@@ -5,21 +5,21 @@ Hier ist der Sourcecode der Vorlesung Programmierung 2 zu finden.
 Die Vorlesungen sind Kapitelweise strukturiert
 
 
-| Ordner       | Thema                                             |
-|--------------|---------------------------------------------------|
-| `Kapitel_01` | Versionsverwaltung mit git |
-| `Kapitel_02` | Numerisches Python I: Matplotlib & Numpy |
-| `Kapitel_03` | Objektorientierung I: Basics |
-| `Kapitel_04` | Objektorientierung II: Magic Methods |
-| `Kapitel_05` | Objektorientierung III: Vererbung & Klassendiagramme |
-| `Kapitel_06` | GUI-Programmierung I: Einführung |
-| `Kapitel_07` | GUI-Programmierung II: Dialoge |
-| `Kapitel_08` | GUI-Programmierung III: QtDesigner |
-| `Kapitel_09` | GUI-Programmierung IV: Threads & Processes (QThreadPool) |
-| `Kapitel_10` |  Numerisches Python II: Matplotlib & PyQt5 |
-| `Kapitel_11` | Numerisches Python III: dritter Teil |
-| `Kapitel_12` | Geo-Programmierung I: Projektionen & Vektordaten |
-| `Kapitel_13` | Geo-Programmierung II: GeoPandas |
+| Ordner       | Thema                                                    | Datum              |
+|--------------|----------------------------------------------------------|--------------------|
+| `Kapitel_01` | Versionsverwaltung mit git                               | 22. September 2021 |
+| `Kapitel_02` | Numerisches Python I: Matplotlib & Numpy                 | 29. September 2021 |
+| `Kapitel_03` | Objektorientierung I: Basics                             |  6. Oktober 2021   |
+| `Kapitel_04` | Objektorientierung II: Magic Methods                     | 13. Oktober 2021   |
+| `Kapitel_05` | Objektorientierung III: Vererbung & Klassendiagramme.    | 20. Oktober 2021   |
+| `Kapitel_06` | GUI-Programmierung I: Einführung                         | 27. Oktober 2021   |
+| `Kapitel_07` | GUI-Programmierung II: Dialoge                           |  3. November 2021  |
+| `Kapitel_08` | GUI-Programmierung III: QtDesigner                       | 10. November 2021  |
+| `Kapitel_09` | GUI-Programmierung IV: Threads & Processes (QThreadPool) | 17. November 2021  |
+| `Kapitel_10` |  Numerisches Python II: Matplotlib & PyQt5               | 24. November 2021  |
+| `Kapitel_11` | Numerisches Python III: dritter Teil                     |  1. Dezember 2021  |
+| `Kapitel_12` | Geo-Programmierung I: Projektionen & Vektordaten         |  8. Dezember 2021  |
+| `Kapitel_13` | Geo-Programmierung II: GeoPandas                         | 15. Dezember 2021  |
 
 
 Material ist im jeweiligen Unterordner zu finden
