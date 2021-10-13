@@ -1,7 +1,6 @@
 import requests
 import apikey
 
-
 class Temperatur:
     def __init__(self, city):
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apikey.api_key}&units=metric"
@@ -15,6 +14,23 @@ class Temperatur:
     
     def __gt__(self, other):
         return self.celsius > other.celsius
+
+    def __ge__(self, other):
+        return self.celsius >= other.celsius
+    
+    def __lt__(self, other):
+        return self.celsius < other.celsius
+
+    def __le__(self, other):
+        return self.celsius <= other.celsius
+    
+    def __eq__(self, other):
+        return self.celsius == other.celsius
+
+    def __ne__(self, other):
+        return self.celsius != other.celsius
+    
+
 
 t_zurich = Temperatur("Zürich,Switzerland")
 t_basel = Temperatur("Basel,Switzerland")
