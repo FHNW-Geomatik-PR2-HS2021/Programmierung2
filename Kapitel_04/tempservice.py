@@ -31,7 +31,6 @@ class Temperatur:
         return self.celsius != other.celsius
     
 
-
 t_zurich = Temperatur("Zürich,Switzerland")
 t_basel = Temperatur("Basel,Switzerland")
 

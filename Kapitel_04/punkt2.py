@@ -6,8 +6,6 @@ class Punkt:
     def __str__(self):
         return f"POINT ({self.x} {self.y})"
 
-    def __int__(self):
-        return 0
 
 # -------------------------------------
 
@@ -18,6 +16,3 @@ b = Punkt(4,5)
 print(b)
 
 print(str(b))
-
-c = int(a)
-print(c)
