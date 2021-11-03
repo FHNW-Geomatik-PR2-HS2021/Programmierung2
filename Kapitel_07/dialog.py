@@ -11,9 +11,9 @@ class Fenster(QMainWindow):
 
         button1 = QPushButton("QMessageBox: Information")
         button2 = QPushButton("QMessageBox: About")
-        button3 = QPushButton("3")
-        button4 = QPushButton("4")
-        button5 = QPushButton("5")
+        button3 = QPushButton("QMessageBox: Warning")
+        button4 = QPushButton("QMessageBox: Critical")
+        button5 = QPushButton("QMessageBox: Question")
 
         button1.clicked.connect(self.button1_clicked)
         button2.clicked.connect(self.button2_clicked)
@@ -50,11 +50,20 @@ class Fenster(QMainWindow):
         QMessageBox.about(self, "Titel", "Dieses Programm wurde mit PyQT5 erstellt")
 
     def button3_clicked(self):
-        pass
+        QMessageBox.warning(self, "Titel", "Disk ist voll, das File konnte nicht geschrieben werden")
+
     def button4_clicked(self):
-        pass
+        QMessageBox.critical(self, "Stop", "Das Konfigurations-File konnte nicht geladen werden. Das Programm muss beendet werden.")
+        self.close()
+
     def button5_clicked(self):
-        pass
+        antwort = QMessageBox.question(self, "Frage", "Ist Python eine gute Spache?", QMessageBox.Yes, QMessageBox.No)
+
+        if antwort == QMessageBox.Yes:
+            QMessageBox.information(self, "Python", "Ja, das ist klar")
+        else:
+            QMessageBox.critical(self, "Buuuuuuh!!!!", "Ok, das Programm wird beendet")
+            self.close()
 
 app = QApplication([])
 f = Fenster()
