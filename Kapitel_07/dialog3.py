@@ -2,6 +2,10 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
+style = """* {font-size: 48px;}
+                    QPushButton { font-size: 48px; background-color: #00AA00; }
+                   QPushButton:pressed {font-size: 48px; background-color: #AA0000}"""
+
 class Dialog(QDialog):
     def __init__(self, parent):
         super().__init__(parent)
@@ -12,6 +16,7 @@ class Dialog(QDialog):
         layout.addWidget(label)
         layout.addWidget(button)
         self.setLayout(layout)
+        self.setStyleSheet(style)
         button.clicked.connect(self.button_clicked)
 
     def button_clicked(self):
@@ -46,8 +51,7 @@ class Fenster(QMainWindow):
             function = getattr(self,f"button{i+1}_clicked")
             buttons[i].clicked.connect(function)
 
-        style = """QPushButton { font-size: 48px; background-color: #00AA00; }
-                   QPushButton:pressed {font-size: 48px; background-color: #AA0000}"""
+       
 
         for button in buttons:
             button.setStyleSheet(style)
