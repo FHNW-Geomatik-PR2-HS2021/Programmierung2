@@ -93,7 +93,9 @@ class Fenster(QMainWindow):
     def button6_clicked(self):
         dateifilter = "Textdatei (*.txt *.ttt);;Python File (*.py)"
 
-        filename, filter = QFileDialog.getOpenFileName(self, "Datei öffnen", "", dateifilter)
+        path = QStandardPaths.standardLocations(QStandardPaths.DesktopLocation)[0]
+
+        filename, filter = QFileDialog.getOpenFileName(self, "Datei öffnen", path, dateifilter)
 
         if filename != "":
             QMessageBox.information(self, "File", f"<h1>{filename}</h1><h2>{filter}</h2>")
