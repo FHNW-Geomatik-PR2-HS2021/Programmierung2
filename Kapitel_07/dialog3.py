@@ -51,8 +51,6 @@ class Fenster(QMainWindow):
             function = getattr(self,f"button{i+1}_clicked")
             buttons[i].clicked.connect(function)
 
-       
-
         for button in buttons:
             button.setStyleSheet(style)
             layout.addWidget(button)
