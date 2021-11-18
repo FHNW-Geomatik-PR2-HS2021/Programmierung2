@@ -15,7 +15,7 @@ Die Vorlesungen sind Kapitelweise strukturiert
 | `Kapitel_06` | GUI-Programmierung I: Einführung                         | 27. Oktober 2021   |
 | `Kapitel_07` | GUI-Programmierung II: Dialoge                           |  3. November 2021  |
 | `Kapitel_08` | GUI-Programmierung III: QtDesigner                       | 10. November 2021  |
-| `Kapitel_09` | Matplotlib & PyQt5 | 17. November 2021  |
+| `Kapitel_09` | Matplotlib & PyQt5 | 18. November 2021  |
 |       |  Prüfung                | 24. November 2021  |
 | `Kapitel_10` | Numerisches Python III: dritter Teil                     |  1. Dezember 2021  |
 | `Kapitel_11` | Geo-Programmierung I: Projektionen & Vektordaten         |  8. Dezember 2021  |
