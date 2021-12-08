@@ -8,6 +8,7 @@ class Browser(QMainWindow):
         super().__init__()
         loadUi("Kapitel_08/webbrowser.ui", self)
 
+        # Cookies erlauben
         defaultProfile = QWebEngineProfile.defaultProfile()
         defaultProfile.setPersistentCookiesPolicy(QWebEngineProfile.ForcePersistentCookies)
 
